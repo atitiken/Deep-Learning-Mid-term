@@ -1,0 +1,2 @@
+Classifier train loss decreased by 0.667 from 0.740 to 0.072
+Classifier val loss decreased by 0.023 from 0.685 to 0.662

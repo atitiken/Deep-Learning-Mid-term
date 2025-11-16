@@ -1,0 +1,236 @@
+Training Log - Started at 2025-11-16 17:33:12
+================================================================================
+
+Student: Aeriel Nathen (2702220422)
+Class: turtle (ID: 93)
+Seed: 738235961
+Device: cuda
+Batch Size: 32
+Precision: Full (FP32) for maximum stability
+Enhancements: AdamW optimizer, EfficientNet-B0
+
+============================================================
+DATA PREPARATION
+============================================================
+Filtering class: turtle (ID: 93)
+train samples: 450
+val samples: 50
+test samples: 100
+
+============================================================
+DCGAN TRAINING WITH ADAMW
+============================================================
+Device: cuda
+Architecture: Deep Convolutional GAN
+Loss: Binary Cross-Entropy with Logits
+Optimizer: AdamW
+Precision: Full (FP32)
+Epochs: 3000
+Batch size: 32
+G_LR: 0.0002, D_LR: 0.0002
+Beta1: 0.5, Beta2: 0.999
+============================================================
+
+Using full FP32 precision for maximum stability
+Starting Training Loop...
+
+Epoch [1/3000] D_loss: 1.4369 (val 1.6144) G_loss: 2.9458 (val 0.4883) D(x): 0.590 D(G(z)): 0.100
+
+Epoch [50/3000] D_loss: 0.8356 (val 1.8077) G_loss: 1.9902 (val 0.7699) D(x): 0.705 D(G(z)): 0.188
+
+Epoch [100/3000] D_loss: 0.9396 (val 2.2014) G_loss: 2.0003 (val 2.2556) D(x): 0.704 D(G(z)): 0.192
+
+Epoch [150/3000] D_loss: 0.7621 (val 1.3792) G_loss: 1.7379 (val 1.5592) D(x): 0.705 D(G(z)): 0.225
+
+Epoch [200/3000] D_loss: 0.8509 (val 1.4043) G_loss: 1.9027 (val 1.3721) D(x): 0.708 D(G(z)): 0.209
+
+Epoch [250/3000] D_loss: 0.7008 (val 1.3814) G_loss: 1.8046 (val 1.2033) D(x): 0.732 D(G(z)): 0.214
+
+Epoch [300/3000] D_loss: 0.7316 (val 1.7392) G_loss: 2.0760 (val 0.7914) D(x): 0.719 D(G(z)): 0.193
+
+Epoch [350/3000] D_loss: 0.7237 (val 1.2696) G_loss: 2.1459 (val 1.4836) D(x): 0.734 D(G(z)): 0.192
+
+Epoch [400/3000] D_loss: 0.7399 (val 1.7967) G_loss: 1.8318 (val 0.4918) D(x): 0.712 D(G(z)): 0.239
+
+Epoch [450/3000] D_loss: 0.8231 (val 2.1358) G_loss: 1.5364 (val 0.4624) D(x): 0.710 D(G(z)): 0.297
+
+Epoch [500/3000] D_loss: 0.7934 (val 1.1499) G_loss: 1.7424 (val 0.8643) D(x): 0.699 D(G(z)): 0.236
+
+Epoch [550/3000] D_loss: 0.8087 (val 1.5066) G_loss: 1.8391 (val 1.7837) D(x): 0.708 D(G(z)): 0.233
+
+Epoch [600/3000] D_loss: 0.8821 (val 1.6443) G_loss: 1.6959 (val 0.4706) D(x): 0.697 D(G(z)): 0.269
+
+Epoch [650/3000] D_loss: 0.8551 (val 1.4750) G_loss: 1.9594 (val 1.6717) D(x): 0.709 D(G(z)): 0.234
+
+Epoch [700/3000] D_loss: 0.9588 (val 1.6638) G_loss: 1.9846 (val 2.5185) D(x): 0.734 D(G(z)): 0.259
+
+Epoch [750/3000] D_loss: 0.7255 (val 1.6470) G_loss: 1.9679 (val 1.9848) D(x): 0.745 D(G(z)): 0.216
+
+Epoch [800/3000] D_loss: 0.7237 (val 1.7674) G_loss: 2.0062 (val 1.8548) D(x): 0.750 D(G(z)): 0.212
+
+Epoch [850/3000] D_loss: 0.8032 (val 1.2381) G_loss: 1.8645 (val 1.5914) D(x): 0.741 D(G(z)): 0.243
+
+Epoch [900/3000] D_loss: 0.7058 (val 1.8296) G_loss: 1.9311 (val 1.8459) D(x): 0.746 D(G(z)): 0.234
+
+Epoch [950/3000] D_loss: 0.4739 (val 1.3600) G_loss: 2.0737 (val 1.6861) D(x): 0.807 D(G(z)): 0.188
+
+Epoch [1000/3000] D_loss: 0.6740 (val 1.8405) G_loss: 2.0860 (val 2.5468) D(x): 0.771 D(G(z)): 0.198
+
+Epoch [1050/3000] D_loss: 0.4579 (val 1.4805) G_loss: 2.2397 (val 1.4658) D(x): 0.823 D(G(z)): 0.168
+
+Epoch [1100/3000] D_loss: 0.5147 (val 1.4321) G_loss: 2.1238 (val 0.7262) D(x): 0.784 D(G(z)): 0.196
+
+Epoch [1150/3000] D_loss: 1.8031 (val 2.1816) G_loss: 2.1407 (val 0.7542) D(x): 0.631 D(G(z)): 0.295
+
+Epoch [1200/3000] D_loss: 0.4853 (val 1.6737) G_loss: 2.1629 (val 2.0519) D(x): 0.802 D(G(z)): 0.181
+
+Epoch [1250/3000] D_loss: 0.5783 (val 1.7306) G_loss: 2.2922 (val 1.5376) D(x): 0.790 D(G(z)): 0.185
+
+Epoch [1300/3000] D_loss: 0.4905 (val 1.7973) G_loss: 2.2117 (val 2.2537) D(x): 0.824 D(G(z)): 0.192
+
+Epoch [1350/3000] D_loss: 0.3854 (val 1.6092) G_loss: 2.8041 (val 1.8056) D(x): 0.856 D(G(z)): 0.115
+
+Epoch [1400/3000] D_loss: 0.8545 (val 2.2330) G_loss: 2.3056 (val 1.6882) D(x): 0.740 D(G(z)): 0.212
+
+Epoch [1450/3000] D_loss: 0.4620 (val 1.9131) G_loss: 2.5466 (val 2.0158) D(x): 0.813 D(G(z)): 0.157
+
+Epoch [1500/3000] D_loss: 0.6075 (val 1.5369) G_loss: 2.3762 (val 1.2912) D(x): 0.756 D(G(z)): 0.206
+
+Epoch [1550/3000] D_loss: 0.4394 (val 2.3520) G_loss: 2.7862 (val 2.6408) D(x): 0.843 D(G(z)): 0.127
+
+Epoch [1600/3000] D_loss: 0.5034 (val 2.3330) G_loss: 2.9096 (val 2.2793) D(x): 0.818 D(G(z)): 0.133
+
+Epoch [1650/3000] D_loss: 0.6459 (val 2.9992) G_loss: 2.7748 (val 3.4431) D(x): 0.815 D(G(z)): 0.188
+
+Epoch [1700/3000] D_loss: 0.3432 (val 2.8905) G_loss: 2.9447 (val 2.6148) D(x): 0.869 D(G(z)): 0.121
+
+Epoch [1750/3000] D_loss: 0.4930 (val 2.1453) G_loss: 2.8941 (val 1.6228) D(x): 0.818 D(G(z)): 0.134
+
+Epoch [1800/3000] D_loss: 0.3552 (val 2.8821) G_loss: 2.7590 (val 2.5357) D(x): 0.862 D(G(z)): 0.118
+
+Epoch [1850/3000] D_loss: 0.3689 (val 1.8460) G_loss: 2.8763 (val 1.8148) D(x): 0.854 D(G(z)): 0.124
+
+Epoch [1900/3000] D_loss: 0.3140 (val 2.3632) G_loss: 3.1020 (val 2.2752) D(x): 0.874 D(G(z)): 0.107
+
+Epoch [1950/3000] D_loss: 0.7183 (val 1.9115) G_loss: 2.9085 (val 1.4545) D(x): 0.752 D(G(z)): 0.171
+
+Epoch [2000/3000] D_loss: 0.4015 (val 2.9001) G_loss: 2.6944 (val 1.8355) D(x): 0.842 D(G(z)): 0.143
+
+Epoch [2050/3000] D_loss: 0.3076 (val 3.1846) G_loss: 3.2801 (val 2.4922) D(x): 0.881 D(G(z)): 0.092
+
+Epoch [2100/3000] D_loss: 0.8743 (val 2.7243) G_loss: 2.5455 (val 3.0241) D(x): 0.782 D(G(z)): 0.207
+
+Epoch [2150/3000] D_loss: 0.2523 (val 2.3296) G_loss: 3.4325 (val 1.9092) D(x): 0.896 D(G(z)): 0.073
+
+Epoch [2200/3000] D_loss: 0.3715 (val 2.5729) G_loss: 2.8037 (val 1.9927) D(x): 0.867 D(G(z)): 0.124
+
+Epoch [2250/3000] D_loss: 0.2062 (val 2.3428) G_loss: 3.2927 (val 1.6155) D(x): 0.912 D(G(z)): 0.082
+
+Epoch [2300/3000] D_loss: 0.5535 (val 2.2558) G_loss: 2.9126 (val 1.0785) D(x): 0.805 D(G(z)): 0.161
+
+Epoch [2350/3000] D_loss: 0.5859 (val 3.4966) G_loss: 3.2448 (val 2.7606) D(x): 0.826 D(G(z)): 0.125
+
+Epoch [2400/3000] D_loss: 0.9122 (val 2.3361) G_loss: 2.6846 (val 2.3574) D(x): 0.763 D(G(z)): 0.226
+
+Epoch [2450/3000] D_loss: 0.3569 (val 3.1773) G_loss: 3.3471 (val 2.7878) D(x): 0.873 D(G(z)): 0.118
+
+Epoch [2500/3000] D_loss: 0.3525 (val 3.5045) G_loss: 3.1359 (val 2.5088) D(x): 0.882 D(G(z)): 0.111
+
+Epoch [2550/3000] D_loss: 0.3415 (val 2.7362) G_loss: 3.2558 (val 1.8315) D(x): 0.875 D(G(z)): 0.117
+
+Epoch [2600/3000] D_loss: 0.2808 (val 2.6724) G_loss: 3.2695 (val 2.8862) D(x): 0.886 D(G(z)): 0.100
+
+Epoch [2650/3000] D_loss: 0.3132 (val 3.2527) G_loss: 3.1043 (val 3.5972) D(x): 0.895 D(G(z)): 0.112
+
+Epoch [2700/3000] D_loss: 0.6610 (val 3.2301) G_loss: 3.3736 (val 2.9294) D(x): 0.822 D(G(z)): 0.174
+
+Epoch [2750/3000] D_loss: 0.5974 (val 3.2886) G_loss: 3.2259 (val 2.0863) D(x): 0.833 D(G(z)): 0.142
+
+Epoch [2800/3000] D_loss: 0.2602 (val 3.3532) G_loss: 3.2238 (val 2.4456) D(x): 0.899 D(G(z)): 0.091
+
+Epoch [2850/3000] D_loss: 0.2454 (val 3.5456) G_loss: 3.6790 (val 3.0303) D(x): 0.895 D(G(z)): 0.068
+
+Epoch [2900/3000] D_loss: 0.2444 (val 4.0208) G_loss: 4.0300 (val 2.7058) D(x): 0.903 D(G(z)): 0.061
+
+Epoch [2950/3000] D_loss: 0.3324 (val 3.5563) G_loss: 3.3846 (val 2.2813) D(x): 0.874 D(G(z)): 0.136
+
+Epoch [3000/3000] D_loss: 0.3216 (val 4.9672) G_loss: 3.5396 (val 3.6514) D(x): 0.894 D(G(z)): 0.105
+
+Generating training plots...
+
+Training complete. Models saved to problem2_outputs\checkpoints
+
+============================================================
+GENERATING 500 IMAGES
+============================================================
+Saved 500 images to problem2_outputs\generated
+Saved real vs fake comparison grid to problem2_outputs\figures\real_vs_fake.png
+
+============================================================
+PREPARING CLASSIFICATION DATASET
+============================================================
+Train: 700 | Val: 150 | Test: 150
+
+Classifier hyperparameters -> lr: 2.00e-04, weight_decay: 1.00e-02
+
+============================================================
+TRAINING EFFICIENTNET-B0 CLASSIFIER WITH ADAMW
+============================================================
+Optimizer: AdamW
+Precision: Full (FP32)
+Learning rate: 0.0002
+Weight decay: 0.01
+Epochs: 25
+============================================================
+
+Epoch 1 | Train: 0.7397 | Val: 0.6853
+Epoch 2 | Train: 0.6084 | Val: 0.6706
+Epoch 3 | Train: 0.5496 | Val: 0.6936
+Epoch 4 | Train: 0.5169 | Val: 0.6726
+Epoch 5 | Train: 0.4405 | Val: 0.6590
+Epoch 6 | Train: 0.3653 | Val: 0.6325
+Epoch 7 | Train: 0.3071 | Val: 0.6369
+Epoch 8 | Train: 0.2769 | Val: 0.6343
+Epoch 9 | Train: 0.2307 | Val: 0.6235
+Epoch 10 | Train: 0.2028 | Val: 0.6467
+Epoch 11 | Train: 0.1629 | Val: 0.6359
+Epoch 12 | Train: 0.1480 | Val: 0.6686
+Epoch 13 | Train: 0.1231 | Val: 0.6578
+Epoch 14 | Train: 0.1110 | Val: 0.6908
+Epoch 15 | Train: 0.1194 | Val: 0.6898
+Epoch 16 | Train: 0.1157 | Val: 0.6615
+Epoch 17 | Train: 0.0875 | Val: 0.6754
+Epoch 18 | Train: 0.0740 | Val: 0.6591
+Epoch 19 | Train: 0.0859 | Val: 0.6752
+Epoch 20 | Train: 0.0766 | Val: 0.6729
+Epoch 21 | Train: 0.0780 | Val: 0.6839
+Epoch 22 | Train: 0.0852 | Val: 0.6821
+Epoch 23 | Train: 0.0632 | Val: 0.6556
+Epoch 24 | Train: 0.0793 | Val: 0.6516
+Epoch 25 | Train: 0.0724 | Val: 0.6623
+Classifier saved to problem2_outputs\classifier_model.pt
+Saved classifier training analysis to problem2_outputs\figures\classifier_training_analysis.txt
+
+============================================================
+EVALUATING CLASSIFIER
+============================================================
+
+Test Metrics:
+Accuracy:  0.7200
+Precision: 0.6988
+Recall:    0.7733
+F1 Score:  0.7342
+
+Confusion Matrix:
+[[50 25]
+ [17 58]]
+
+Metrics saved to problem2_outputs\test_metrics.txt
+
+============================================================
+COMPLETED
+============================================================
+
+All outputs saved to: problem2_outputs
+Training log: problem2_outputs\training_log.txt
+============================================================
